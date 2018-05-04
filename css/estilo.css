@@ -17,6 +17,11 @@ h2 {
     font-weight: 500;
 }
 
+hr{
+    border-top: 2px solid #666666;
+    width: 63px;
+}
+
 #header {
     background-color: blue;
     height: 75px;
