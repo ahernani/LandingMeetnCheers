@@ -1,4 +1,4 @@
-*{
+html{
     font-family: 'Raleway', sans-serif;
     color: #666666;
 }
@@ -20,6 +20,20 @@ h2 {
 h5 {
     font-size: 12px;
 }
+
+título1 {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+título2 {
+    font-size: 38px;
+}
+
+título3 {
+    font-size: 65px;
+}
+
 hr{
     border-top: 2px solid #666666;
     width: 63px;
@@ -32,7 +46,7 @@ hr{
 }
 
 #header {
-    height: 75px;
+    max-height: 75px;
     border-width: 0px;
     border-bottom-width: 2px;
     border-style: solid;
@@ -56,9 +70,18 @@ hr{
     bottom: 0;
     padding-top: 6px;
     padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boton-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +93,7 @@ hr{
     font-size: 15px;
     color: #FFFFFF;
     letter-spacing: 0;
-    text-align: center;
+    text-align: right;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -79,17 +102,8 @@ hr{
     padding-bottom: 25px;
 }
 
-#logo, #logo-wrapper, #masinformacion, #boton-wrapper, #eresrestaurante, #eres-wrapper {
+#logo, #logo-wrapper, #masinformacion, #boton-wrapper, #eresrestaurante, #eres-wrapper, {
     height: 100%;
-}
-
-#masinformacion {
-}
-
-#boton-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #main-info {
@@ -141,6 +155,15 @@ hr{
     padding-bottom: 6px;
 }
 
+.flechadown {
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
 #triggers {
     background-color: #ECECEC;
 }
@@ -158,7 +181,9 @@ hr{
 
 #pasos {
     background-color: white;
-    height: 426px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fotopasos {
@@ -177,8 +202,7 @@ hr{
     left: 0;
     right: 0;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-left: 85xpx;
 }
 
 .números {
@@ -204,6 +228,15 @@ hr{
     padding-bottom: 5px;
 }
 
+.flecha {
+    text-align: left;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
 .campotextopasos {
     max-width: 300px;
     text-align: center;
@@ -213,20 +246,12 @@ hr{
     margin: auto;
     padding-top: 25px;
     padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #presupuestos {
-    max-width: 300px;
     text-align: center;
     left: 0;
     right: 0;
-    margin: auto;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    top: 0;
-    bottom: 0;
     margin: auto;
 }
 
@@ -244,12 +269,12 @@ hr{
 
 #slide {
     background-color: #ececec;
-    height: 426px;
 }
 
-.caja {
-    height: 330px;
-    width: 400px;
+
+#caja {
+    max-width: 400px;
+    max-height: 350px;
     background: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 15px;
@@ -262,6 +287,9 @@ hr{
     left: 0;
     right: 0;
     margin: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    overflow: hidden;
 
     -webkit-box-shadow: 2px 2px 5px 1px rgba(212,212,212,0.76);
     -moz-box-shadow: 2px 2px 5px 1px rgba(212,212,212,0.76);
@@ -269,16 +297,23 @@ hr{
 }
 
 .campotextocajas {
-    max-width: 300px;
+    max-width: 375px;
     text-align: left;
-    font-size: 22px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    font-size: 25px;
+    color: #666666;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.campofoto {
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .textocajas {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #datos {
@@ -295,7 +330,7 @@ hr{
     left: 0;
     right: 0;
     margin: auto;
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 .fotowoman {
@@ -322,11 +357,15 @@ hr{
     border-width: 0px;
     border-top-width: 1px;
     border-style: solid;
-    border-color: cbcbcb;
+    border-color: darkgray;
 }
 
 .textofooter {
-    text-align: right;
-    font-size: 15px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: center;
+    color: darkgrey;
+    font-size: 16px;
     padding-right: 45px;
+    padding-top: 15px;
 }
