@@ -21,13 +21,15 @@ h5 {
     font-size: 12px;
 }
 
-título1 {
+h1 {
     font-size: 55px;
     font-weight: 500;
+    line-height: 120%;
 }
 
-título2 {
-    font-size: 38px;
+h2 {
+    font-size: 45px;
+    line-height: 150%;
 }
 
 título3 {
@@ -46,7 +48,6 @@ hr{
 }
 
 #header {
-    max-height: 75px;
     border-width: 0px;
     border-bottom-width: 2px;
     border-style: solid;
@@ -76,12 +77,14 @@ hr{
 }
 
 #logo-wrapper {
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #boton-wrapper {
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +105,7 @@ hr{
     padding-bottom: 25px;
 }
 
-#logo, #logo-wrapper, #masinformacion, #boton-wrapper, #eresrestaurante, #eres-wrapper, {
+#logo, #logo-wrapper, #masinformacion, #boton, #boton-wrapper, #eresrestaurante, #eres-wrapper, {
     height: 100%;
 }
 
@@ -188,12 +191,11 @@ hr{
 
 .fotopasos {
     max-width: 300px;
-    text-align: center;
     font-size: 25px;
     left: 0;
     right: 0;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
 }
 
@@ -358,6 +360,7 @@ hr{
     border-top-width: 1px;
     border-style: solid;
     border-color: darkgray;
+    margin-bottom: 12px;
 }
 
 .textofooter {
