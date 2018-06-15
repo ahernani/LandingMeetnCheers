@@ -42,6 +42,11 @@ hr{
     width: 63px;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 #main {
     background-image: url('img/background_color.svg');
     background-repeat: no-repeat;
@@ -53,6 +58,7 @@ hr{
     border-bottom-width: 2px;
     border-style: solid;
     border-color: white;
+    height: 75px;
 }
 
 .cta {
@@ -76,6 +82,7 @@ hr{
     align-items: center;
     justify-content: center;
 }
+
 
 #logo-wrapper {
     height: 75px;
@@ -106,6 +113,12 @@ hr{
     padding-bottom: 25px;
 }
 
+@media only screen and (max-width: 990px) {
+      .eresrestaurante { 
+          visibility: hidden; 
+    }
+}
+
 #logo, #logo-wrapper, #masinformacion, #boton, #boton-wrapper, #eresrestaurante, #eres-wrapper, {
     height: 100%;
 }
@@ -124,13 +137,20 @@ hr{
     padding-right: 10px;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1400px) {
+      #main-info { 
+          background-size: 50%; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
       #main-info { 
           background: none; 
     }
 }
 
 .principal {
+    width: 100%;
     text-align: left;
     font-size: 30px;
     font-family: 'Raleway';
@@ -175,6 +195,12 @@ hr{
     margin: auto;
     padding-top: 50px;
     padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+      .flechadown { 
+          visibility: hidden; 
+    }
 }
 
 #triggers {
